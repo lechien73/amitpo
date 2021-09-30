@@ -1,3 +1,10 @@
 .bgblue {
     background-color: lightblue;
 }
+
+.clear-button {
+    background-color: transparent;
+    border: none;
+    color: lightblue;
+    font-size: 2rem;
+}

@@ -13,7 +13,8 @@
 <body>
     <div class="container">
         <div class="row mb-3">
-            <div class="col text-center"><h1>AMITPO Calculator</h1></div>
+            <div class="col-md-8 offset-md-2 text-center"><h1>AMITPO Calculator</h1></div>
+            <div class="col-md-1"><button class="clear-button" id="config"><i class="fas fa-cog"></i></button></div>
         </div>
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -102,7 +103,7 @@
                 </form>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-3">
             <div class="col-md-4 offset-md-2">
                 <h2>Total Time:</h2>
             </div>
@@ -111,6 +112,86 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="configModal" tabindex="-1" aria-labelledby="configModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="alertModalLabel">OPTIMA Factors</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <form method="dialog">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Operational:
+                                </div>
+                                <div class="col-md-1">
+                                    <input type="text" id="o">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Passive:
+                                </div>
+                                <div class="col-md-1">
+                                    <input type="text" id="p">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Text:
+                                </div>
+                                <div class="col-md-1">
+                                    <input type="text" id="t">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Intensive:
+                                </div>
+                                <div class="col-md-1">
+                                    <input type="text" id="i">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Milestone:
+                                </div>
+                                <div class="col-md-1">
+                                    <input type="text" id="m">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Active:
+                                </div>
+                                <div class="col-md-1">
+                                    <input type="text" id="a">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    Effective Words per Minute:
+                                </div>
+                                <div class="col-md-1">
+                                    <input type="text" id="wpm">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="savebutton">Save</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
     <script src="js/calc.js"></script>
