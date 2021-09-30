@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Units Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col text-center"><h1>AMITPO Calculator</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="row">
+                    <div class="col-md-3 offset-md-6"><h2>Number of units</h2></div>
+                    <div class="col-md-3"><h2>Length / Wordcount</h2></div>
+                </div>
+                <form>
+                    <div class="row bgblue">
+                        <div class="col-md-6">
+                            <h3>Operational videos</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" id="o_num" class="form-control" placeholder="Number" aria-label="Operational videos number">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="o_len" class="form-control" placeholder="Length per video" aria-label="Operational videos length" value="6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Passive videos</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="p_num" class="form-control" placeholder="Number" aria-label="Passive videos number">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="p_len" class="form-control" placeholder="Length per video" aria-label="Passive videos length" value="6">
+                        </div>
+                    </div>
+                    <div class="row bgblue">
+                        <div class="col-md-6">
+                            <h3>Text units</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="t_num" class="form-control" placeholder="Number" aria-label="Text units number">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="t_len" class="form-control" placeholder="Words per unit" aria-label="Words per unit" value="300">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Intensive videos</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="i_num" class="form-control" placeholder="Number" aria-label="Intensive videos number">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="i_len" class="form-control" placeholder="Length per video" aria-label="Intensive videos length" value="6">
+                        </div>
+                    </div>
+                    <div class="row bgblue">
+                        <div class="col-md-6">
+                            <h3>Milestone Units</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="m_num" class="form-control" placeholder="Number" aria-label="Milestone number">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="m_len" class="form-control" placeholder="Length" aria-label="Milestone units length">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Active videos</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="a_num" class="form-control" placeholder="Number" aria-label="Active videos number">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="a_len" class="form-control" placeholder="Length per video" aria-label="Active videos length" value="6">
+                        </div>
+                    </div>
+                    <div class="row bgblue">
+                        <div class="col-md-6">
+                            <h3>Challenges</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="c_num" class="form-control" placeholder="Number" aria-label="Challenges number">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="c_len" class="form-control" placeholder="Length per challenge" aria-label="Challenges length" value="10">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-2">
+                <h2>Total Time:</h2>
+            </div>
+            <div class="col-md-4">
+                <h2 id="totaltime">0 hours</h2>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="js/calc.js"></script>
+</body>
+</html>
