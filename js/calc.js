@@ -33,7 +33,7 @@ function recalculate() {
     let running_total = 0;
     running_total += o_num * o_len * optima.o;
     running_total += p_num * p_len * optima.p;
-    running_total += t_num * t_len * optima.t;
+    running_total += (t_num * t_len * optima.t) / 120;
     running_total += i_num * i_len * optima.i;
     running_total += m_num * m_len * optima.m;
     running_total += a_num * a_len * optima.a;
