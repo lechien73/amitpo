@@ -14,7 +14,10 @@
     <div class="container">
         <div class="row mb-3">
             <div class="col-md-8 offset-md-2 text-center"><h1>AMITPO Calculator</h1></div>
-            <div class="col-md-1"><button class="clear-button" id="config"><i class="fas fa-cog"></i></button></div>
+            <div class="col-md-2">
+                <button class="clear-button" id="config"><i class="fas fa-cog"></i></button>
+                <button class="clear-button" id="help"><i class="fas fa-info"></i></button>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -187,6 +190,35 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" id="savebutton">Save</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="helptModalLabel">Help</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col">
+                        <p>Enter the number of video, text, milestone and challenge units on the left side.</p>
+                        <p>Enter the average duration of videos in minutes, the expected duration of each challenge in minutes and the duration of milestone units in minutes on the right side.</p>
+                        <hr>
+                        <p>Click on the gear icon to reconfigure the OPTIMA factors.</p>
+                        <p>Videos are calculated as: number of units * average length * OPTIMA factor</p>
+                        <p>Text units are: number of units * average word length / EWPM (the OPTIMA factor for a text unit is always 1)</p>
+                        <p>Milestone or Portfolio units are: number of units * unit length (the OPTIMA factor for a milestone unit is always 1)</p>
+                        <p>Challenges are calculated as: number of units * length (Challenges are counted as text units)</p>
+                        <p>The EWPM is the effective words per minute that an average adult can read with 60% comprehension</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
             </div>
         </div>

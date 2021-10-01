@@ -9,6 +9,7 @@ let optima = {
 }
 
 let configModal = new bootstrap.Modal(document.getElementById("configModal"));
+let helpModal = new bootstrap.Modal(document.getElementById("helpModal"));
 
 let fields = document.getElementsByClassName("form-control");
 
@@ -18,6 +19,9 @@ for (let field of fields) {
 
 document.getElementById("config").addEventListener("click", show);
 document.getElementById("savebutton").addEventListener("click", save);
+document.getElementById("help").addEventListener("click", () => {
+    helpModal.show();
+});
 
 function recalculate() {
 
